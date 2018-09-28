@@ -7,7 +7,7 @@ class WhatsAppHome extends StatefulWidget {
 class _WhatsAppHomeState extends State<WhatsAppHome> {
   @override
   Widget build(BuildContext context) {
-   return new Container(
+   return new Scaffold(
   
    );
   }
