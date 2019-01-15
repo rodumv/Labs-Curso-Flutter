@@ -1,0 +1,111 @@
+Flutter crash report; please file at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run
+
+## exception
+
+String: Exit code 1 from: D:\Projects\flutter\Curso\movie_app\2 Drawer\movie_app\android\gradlew.bat -v:
+Error occurred during initialization of VM
+Could not reserve enough space for object heap
+
+```
+#0      runCheckedAsync (package:flutter_tools/src/base/process.dart:249)
+<asynchronous suspension>
+#1      _initializeGradle (package:flutter_tools/src/android/gradle.dart:180)
+<asynchronous suspension>
+#2      _ensureGradle (package:flutter_tools/src/android/gradle.dart:162)
+<asynchronous suspension>
+#3      _readGradleProject (package:flutter_tools/src/android/gradle.dart:97)
+<asynchronous suspension>
+#4      _gradleProject (package:flutter_tools/src/android/gradle.dart:90)
+<asynchronous suspension>
+#5      getGradleAppOut (package:flutter_tools/src/android/gradle.dart:84)
+<asynchronous suspension>
+#6      AndroidApk.fromCurrentDirectory (package:flutter_tools/src/application_package.dart:88)
+<asynchronous suspension>
+#7      getApplicationPackageForPlatform (package:flutter_tools/src/application_package.dart:272)
+<asynchronous suspension>
+#8      FlutterDevice.runHot (package:flutter_tools/src/resident_runner.dart:269)
+<asynchronous suspension>
+#9      HotRunner.run (package:flutter_tools/src/run_hot.dart:216)
+<asynchronous suspension>
+#10     RunCommand.runCommand (package:flutter_tools/src/commands/run.dart:395)
+<asynchronous suspension>
+#11     FlutterCommand.verifyThenRunCommand (package:flutter_tools/src/runner/flutter_command.dart:344)
+<asynchronous suspension>
+#12     FlutterCommand.run.<anonymous closure> (package:flutter_tools/src/runner/flutter_command.dart:279)
+<asynchronous suspension>
+#13     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:142)
+<asynchronous suspension>
+#14     _rootRun (dart:async/zone.dart:1126)
+#15     _CustomZone.run (dart:async/zone.dart:1023)
+#16     runZoned (dart:async/zone.dart:1501)
+#17     AppContext.run (package:flutter_tools/src/base/context.dart:141)
+<asynchronous suspension>
+#18     FlutterCommand.run (package:flutter_tools/src/runner/flutter_command.dart:270)
+#19     CommandRunner.runCommand (package:args/command_runner.dart:194)
+<asynchronous suspension>
+#20     FlutterCommandRunner.runCommand.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:309)
+<asynchronous suspension>
+#21     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:142)
+<asynchronous suspension>
+#22     _rootRun (dart:async/zone.dart:1126)
+#23     _CustomZone.run (dart:async/zone.dart:1023)
+#24     runZoned (dart:async/zone.dart:1501)
+#25     AppContext.run (package:flutter_tools/src/base/context.dart:141)
+<asynchronous suspension>
+#26     FlutterCommandRunner.runCommand (package:flutter_tools/src/runner/flutter_command_runner.dart:265)
+<asynchronous suspension>
+#27     CommandRunner.run.<anonymous closure> (package:args/command_runner.dart:109)
+#28     new Future.sync (dart:async/future.dart:222)
+#29     CommandRunner.run (package:args/command_runner.dart:109)
+#30     FlutterCommandRunner.run (package:flutter_tools/src/runner/flutter_command_runner.dart:174)
+#31     run.<anonymous closure> (package:flutter_tools/runner.dart:59)
+<asynchronous suspension>
+#32     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:142)
+<asynchronous suspension>
+#33     _rootRun (dart:async/zone.dart:1126)
+#34     _CustomZone.run (dart:async/zone.dart:1023)
+#35     runZoned (dart:async/zone.dart:1501)
+#36     AppContext.run (package:flutter_tools/src/base/context.dart:141)
+<asynchronous suspension>
+#37     runInContext (package:flutter_tools/src/context_runner.dart:43)
+<asynchronous suspension>
+#38     run (package:flutter_tools/runner.dart:50)
+#39     main (package:flutter_tools/executable.dart:49)
+<asynchronous suspension>
+#40     main (file:///E:/b/build/slave/Windows_Flutter_Packaging/build/archive/flutter/packages/flutter_tools/bin/flutter_tools.dart:8)
+#41     _startIsolate.<anonymous closure> (dart:isolate-patch/dart:isolate/isolate_patch.dart:277)
+#42     _RawReceivePortImpl._handleMessage (dart:isolate-patch/dart:isolate/isolate_patch.dart:165)
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel beta, v0.5.1, on Microsoft Windows [VersiÃ³n 10.0.17134.285], locale en-US)
+    • Flutter version 0.5.1 at D:\flutter
+    • Framework revision c7ea3ca377 (4 months ago), 2018-05-29 21:07:33 +0200
+    • Engine revision 1ed25ca7b7
+    • Dart version 2.0.0-dev.58.0.flutter-f981f09760
+
+[!] Android toolchain - develop for Android devices (Android SDK 28.0.2)
+    • Android SDK at C:\Users\EQUIPO\AppData\Local\Android\sdk
+    • Android NDK location not configured (optional; useful for native profiling support)
+    • Platform android-28, build-tools 28.0.2
+    • Java binary at: C:\Program Files\Java\jdk1.8.0_60\bin\java
+    ✗ Could not determine java version
+
+[!] Android Studio (version 3.1)
+    • Android Studio at C:\Program Files\Android\Android Studio
+    ✗ Flutter plugin not installed; this adds Flutter specific functionality.
+    ✗ Dart plugin not installed; this adds Dart specific functionality.
+    ✗ Unable to determine bundled Java version.
+    • Try updating or re-installing Android Studio.
+
+[✓] Connected devices (1 available)
+    • Android SDK built for x86 • emulator-5554 • android-x86 • Android 8.1.0 (API 27) (emulator)
+
+! Doctor found issues in 2 categories.
+```
